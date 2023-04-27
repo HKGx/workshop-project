@@ -2,9 +2,11 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
+  const [count, setCount] = useState(0);
+
   return (
     <main>
-      <span>Count: </span>
+      <span>Count: {count}</span>
       <button>Increment</button>
       <button>Decrement</button>
     </main>
